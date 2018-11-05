@@ -15,6 +15,8 @@
 		D27625122183711000B0C247 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27625112183711000B0C247 /* Concentration.swift */; };
 		D2762514218371CC00B0C247 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2762513218371CC00B0C247 /* Card.swift */; };
 		D2762518218571A000B0C247 /* gameTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2762517218571A000B0C247 /* gameTheme.swift */; };
+		D288887B218FFCAF00E57DA8 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D2888879218FFCAF00E57DA8 /* ProgressHUD.bundle */; };
+		D288887C218FFCAF00E57DA8 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D288887A218FFCAF00E57DA8 /* ProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,9 @@
 		D27625112183711000B0C247 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
 		D2762513218371CC00B0C247 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		D2762517218571A000B0C247 /* gameTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameTheme.swift; sourceTree = "<group>"; };
+		D2888878218FFCAF00E57DA8 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProgressHUD.h; path = "../../../../Desktop/IOS/UsefulShit/ProgressHUD-master/ProgressHUD/ProgressHUD/ProgressHUD.h"; sourceTree = "<group>"; };
+		D2888879218FFCAF00E57DA8 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ProgressHUD.bundle; path = "../../../../Desktop/IOS/UsefulShit/ProgressHUD-master/ProgressHUD/ProgressHUD/ProgressHUD.bundle"; sourceTree = "<group>"; };
+		D288887A218FFCAF00E57DA8 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProgressHUD.m; path = "../../../../Desktop/IOS/UsefulShit/ProgressHUD-master/ProgressHUD/ProgressHUD/ProgressHUD.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +79,9 @@
 		D27625102183516500B0C247 /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
+				D2888879218FFCAF00E57DA8 /* ProgressHUD.bundle */,
+				D2888878218FFCAF00E57DA8 /* ProgressHUD.h */,
+				D288887A218FFCAF00E57DA8 /* ProgressHUD.m */,
 				D27624FE218350CB00B0C247 /* AppDelegate.swift */,
 				D2762505218350CC00B0C247 /* Assets.xcassets */,
 				D2762507218350CC00B0C247 /* LaunchScreen.storyboard */,
@@ -113,6 +121,7 @@
 				TargetAttributes = {
 					D27624FA218350CB00B0C247 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -139,6 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D288887B218FFCAF00E57DA8 /* ProgressHUD.bundle in Resources */,
 				D2762509218350CC00B0C247 /* LaunchScreen.storyboard in Resources */,
 				D2762506218350CC00B0C247 /* Assets.xcassets in Resources */,
 				D2762504218350CB00B0C247 /* Main.storyboard in Resources */,
@@ -152,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D288887C218FFCAF00E57DA8 /* ProgressHUD.m in Sources */,
 				D2762501218350CB00B0C247 /* ViewController.swift in Sources */,
 				D2762514218371CC00B0C247 /* Card.swift in Sources */,
 				D27624FF218350CB00B0C247 /* AppDelegate.swift in Sources */,
@@ -302,6 +313,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4B6DXRYYGK;
 				INFOPLIST_FILE = Concentration/Info.plist;
@@ -311,6 +323,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.QappPractice.Concentration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Concentration/Supporting files/Concentration-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -320,6 +334,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4B6DXRYYGK;
 				INFOPLIST_FILE = Concentration/Info.plist;
@@ -329,6 +344,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.QappPractice.Concentration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Concentration/Supporting files/Concentration-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

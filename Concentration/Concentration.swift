@@ -23,7 +23,10 @@ class concentration
                 if cards[matchIndex].identifier == cards[index].identifier{
                     cards[matchIndex].isMatched = true
                     cards[index].isMatched = true
-                    score = score + 3
+                    
+                    
+                    let currdate = Date()
+                    score += Int(10/Float((currdate.compare(time)).rawValue))
                 }
                 cards[index].isFaceUp=true
                 indexOfOneAndOnlyFaceUpCard = nil
@@ -52,5 +55,7 @@ init(numberOfPairsOfCards : Int) {
     {
         cards.sort { (_,_) in arc4random() < arc4random() }
 }
+    
 }
+    
 }
